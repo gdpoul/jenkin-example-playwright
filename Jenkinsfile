@@ -26,6 +26,7 @@ pipeline {
     stage('show report') {
       steps{
         script {
+        bat "npx playwright show-report"
         bat "allure serve"
         }
       }

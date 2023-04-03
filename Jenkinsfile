@@ -4,8 +4,7 @@ pipeline {
      stage('build') {
             steps {
                 script {
-                   /* the return value gets caught and saved into the variable MY_CONTAINER */
-                   MY_CONTAINER = bat '@docker run -d -i mcr.microsoft.com/playwright:v1.32.0-focal'
+                   bat '@docker run -d -i mcr.microsoft.com/playwright:v1.32.0-focal'
                 }
             }
       }

@@ -23,5 +23,12 @@ pipeline {
         }
       }
     }
+    stage('show report') {
+      steps{
+        script {
+        bat "allure serve"
+        }
+      }
+    }
   }
 }

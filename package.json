@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/gdpoul/jenkin-example-playwright#readme",
   "devDependencies": {
-    "@playwright/test": "^1.32.1"
+    "@playwright/test": "^1.32.1",
+    "allure-commandline": "^2.21.0",
+    "allure-playwright": "^2.1.0"
   }
 }

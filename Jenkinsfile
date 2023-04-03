@@ -5,8 +5,7 @@ pipeline {
             steps {
                 script {
                    /* the return value gets caught and saved into the variable MY_CONTAINER */
-                   MY_CONTAINER = bat(script: '@docker run -d -i mcr.microsoft.com/playwright:v1.32.0-focal', returnStdout: true).trim()
-                   echo "mycontainer_id is ${MY_CONTAINER}"
+                   MY_CONTAINER = bat '@docker run -d -i mcr.microsoft.com/playwright:v1.32.0-focal'
                 }
             }
       }

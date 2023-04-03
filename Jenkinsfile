@@ -1,7 +1,7 @@
 pipeline {
   agent { 
     docker { 
-      image 'docker run -v C:/Users/ganes/.jenkins/workspace/Playwright-Typescript:/app -w /app mcr.microsoft.com/playwright:v1.32.0-focal'
+      image 'docker pull mcr.microsoft.com/playwright:v1.32.0-focal'
     } 
   }
   stages {

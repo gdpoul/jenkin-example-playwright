@@ -23,12 +23,12 @@ pipeline {
         }
       }
     }
-    stage('show report') {
-      steps{
-        script {
-        bat "npx playwright show-report"
-        }
-      }
-    }
+    // stage('show report') {
+    //   steps{
+    //     script {
+    //     bat "npx playwright show-report"
+    //     }
+    //   }
+    // }
   }
 }

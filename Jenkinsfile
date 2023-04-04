@@ -27,7 +27,6 @@ pipeline {
       steps{
         script {
         bat "npx playwright show-report"
-        bat "allure serve"
         }
       }
     }

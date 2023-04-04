@@ -8,13 +8,14 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter:[ 
     ['html'],
-    ["allure-playwright",
-    {
-      detail: true,
-      outputFolder: "allure-results",
-      suiteTitle: true,
-    },
-  ]
+    ["list"],
+  //   ["allure-playwright",
+  //   {
+  //     detail: true,
+  //     outputFolder: "allure-results",
+  //     suiteTitle: true,
+  //   },
+  // ]
 ],
   use: {
    trace: 'on-first-retry'

@@ -16,3 +16,11 @@ test('get started link', async ({ page }) => {
   // Expects the URL to contain intro.
   await expect(page).toHaveURL(/.*intro/);
 });
+
+test('has browsers', async({page})=>{
+  await page.goto('https://playwright.dev/');
+ 
+  // Except a browser logo
+  await expect(page.locator("//img[contains(@src,'Browsers.png')]")).toBeVisible();
+
+})

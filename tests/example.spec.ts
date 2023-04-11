@@ -19,7 +19,6 @@ test('get started link', async ({ page }) => {
 
 test('has browsers', async({page})=>{
   await page.goto('https://playwright.dev/');
- 
   // Except a browser logo
   await expect(page.locator("//img[contains(@src,'Browsers.png')]")).toBeVisible();
 })

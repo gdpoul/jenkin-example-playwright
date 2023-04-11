@@ -22,5 +22,4 @@ test('has browsers', async({page})=>{
  
   // Except a browser logo
   await expect(page.locator("//img[contains(@src,'Browsers.png')]")).toBeVisible();
-
 })
